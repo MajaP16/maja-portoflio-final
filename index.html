@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Maja Petrova</title>
+  <link rel="icon" type="image/ico" href="images/logo.svg">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <section id="home">
+    <h1 id="main-h1">Portfolio | Maja Petrova</h1>
+    <img src="images/home-hover.png" alt="hover" class="home-hover">
+    <div class="nav-bar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/maja-petrova-672493294/"><img src="images/linkedin.svg" alt="insta"></a>
+      <a href="mailto:petrova.maja16@gmail.com"><img src="images/mail.png" alt="mail"></a>
+    </div>
+
+  </section>
+  <nav class="sticky-nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/maja-petrova-672493294/"><img src="images/linkedin.svg" alt="insta"
+          width="24" height="24"></a>
+      <a href="mailto:petrova.maja16@gmail.com"><img src="images/mail.png" alt="mail" width="26" height="26"></a>
+    </div>
+  </nav>
+  <section id="about">
+    <div class="section-container">
+      <span class="section-title">Hello there!</span>
+      <p class="about-text">
+        My name is Maja - newly graduated Ux/Ui designer ready to start the journey of designing screens that tell
+        stories
+      </p>
+
+      <div class="tools-container">
+        <h3>Tools I use</h3>
+        <div class="tools">
+          <img src="images/illustrator.svg" alt="illustrator" width="36" height="36">
+          <img src="images/photoshop.svg" alt="photoshop" width="36" height="36">
+          <img src="images/figma.svg" alt="figma" width="36" height="36">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projects I’ve done</h2>
+    <div class="projects-container">
+      <a href="project-jetSetGo.html" class="project-img-container">
+        <div class="main-img"><img src="images/Frame 2.png" alt="JetSetGo"></div>
+        <div class="secondary-img"><img src="images/Property 1=Variant2.png" alt="JetSetGo"></div>
+      </a>
+      <a href="project-theHelathHub.html" class="project-img-container">
+        <div class="main-img"><img src="images/Frame 6.png" alt="theHealthHub"></div>
+        <div class="secondary-img"><img src="images/Property 1=Variant2 (3).png" alt="theHealthHub"></div>
+      </a>
+      <a href="project-pocketWeather.html" class="project-img-container">
+        <div class="main-img"><img src="images/Frame 5.png" alt="PocketWeather"></div>
+        <div class="secondary-img"><img src="images/Property 1=Variant2 (2).png" alt=""></div>
+      </a>
+      <a href="project-sprout-tales.html" class="project-img-container">
+        <div class="main-img"><img src="images/Frame 4.png" alt="SproutTales"></div>
+        <div class="secondary-img"><img src="images/Property 1=Variant2 (1).png" alt="SproutTales"></div>
+      </a>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Your next big project starts here.</h2>
+    <p class="about-text">
+      I'm open to freelance work, collaborations, or full-time opportunities.
+    </p>
+    <span class="get-in-touch">Get in Touch</span>
+    <div class="overlay popup-form-contaienr" id="contactPopup">
+      <div class="popup">
+        <div class="close-btn" onclick="closePopup()">×</div>
+        <h2>I am happy to hear from you! :)</h2>
+        <form onsubmit="sendMessage(event)">
+          <input type="text" id="userName" placeholder="Name" required>
+          <input type="email" id="userEmail" placeholder="e-mail" required>
+          <textarea id="userMessage" placeholder="Message" required></textarea>
+          <button type="submit" class="send-btn">send</button>
+        </form>
+
+        <div class="popup-footer">
+          <a href="https://www.linkedin.com/in/maja-petrova-672493294/">
+            <img src="images/linkedin.svg" alt="LinkedIn" title="LinkedIn">
+          </a>
+          <a href="mailto:petrova.maja16@gmail.com" title="Email">
+            <img src="images/mail.png" alt="Mail">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+
+</html>
